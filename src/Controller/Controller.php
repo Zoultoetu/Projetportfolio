@@ -36,4 +36,25 @@ class Controller extends AbstractController
             'controller_name' => 'Controller',
         ]);
     }
+    #[Route('/poste_client', name: 'app_poste_client')]
+    public function poste_client(): Response
+    {
+        return $this->render('/home/poste_client.html.twig', [
+            'controller_name' => 'Controller',
+        ]);
+    }
+    #[Route('/programme', name: 'app_programme')]
+    public function programme(): Response
+    {
+        return $this->render('/home/programme.html.twig', [
+            'controller_name' => 'Controller',
+        ]);
+    }
+    #[Route('/signaux', name: 'app_signaux')]
+    public function signaux(): Response
+    {
+        return $this->render('/home/signaux.html.twig', [
+            'controller_name' => 'Controller',
+        ]);
+    }
 }
