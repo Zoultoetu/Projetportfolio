@@ -22,4 +22,11 @@ class Controller extends AbstractController
             'controller_name' => 'Controller',
         ]);
     }
+    #[Route('/loisir', name: 'app_loisir')]
+    public function loisir(): Response
+    {
+        return $this->render('/home/loisir.html.twig', [
+            'controller_name' => 'Controller',
+        ]);
+    }
 }
