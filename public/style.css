@@ -1,0 +1,13 @@
+#image {
+    height: 200px;
+    width: 200px;
+    background: url("media/background_portfolio.jpg");
+    background-size: 200px 200px;
+  }
+
+#photo_de-profil{
+    height: 200px;
+    width: 200px;
+    background: url("media/photo_de_profil.jpg");
+    background-size: 200px 200px;
+}
