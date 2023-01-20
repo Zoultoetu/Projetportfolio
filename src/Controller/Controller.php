@@ -57,4 +57,11 @@ class Controller extends AbstractController
             'controller_name' => 'Controller',
         ]);
     }
+    #[Route('/cv_telecharger', name: 'app_cv_telecharger')]
+    public function cv_telecharger(): Response
+    {
+        return $this->render('/home/cv_telecharger.html.twig', [
+            'controller_name' => 'Controller',
+        ]);
+    }
 }
